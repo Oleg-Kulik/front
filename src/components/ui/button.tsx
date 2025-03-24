@@ -20,12 +20,15 @@ const buttonVariants = cva(
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
+        customGradient: "bg-gradient-to-r from-primary-from to-primary-to text-primary-foreground shadow-xs hover:bg-primary/90",
+        customLink: "text-transparent bg-clip-text bg-gradient-to-r from-primary-from to-primary-to ",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
         sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
         lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
         icon: "size-9",
+        customLg: "h-9 rounded-md px-6 has-[>svg]:px-4 w-full",
       },
     },
     defaultVariants: {
