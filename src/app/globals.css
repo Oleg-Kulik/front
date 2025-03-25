@@ -46,6 +46,7 @@
   --grad: linear-gradient(to right, var(--color-primary), var(--color-secondary));
 }
 
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
