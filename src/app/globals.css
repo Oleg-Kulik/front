@@ -3,6 +3,8 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
+
 @theme inline {
   --color-primary-from: #A855F7;
   --color-primary-to : #3B82F6;
@@ -44,6 +46,8 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --grad: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+
+
 }
 
 
@@ -122,5 +126,11 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@media (max-height: 725px) {
+  .hide-on-small-height {
+    display: none;
   }
 }
