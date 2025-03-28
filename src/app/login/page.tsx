@@ -1,6 +1,9 @@
 "use client"
 
+import { useForm } from "react-hook-form"
+
 import Link from "next/link"
+import Image from 'next/image'
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -12,26 +15,14 @@ import {
     FormLabel,
     FormMessage,
 } from "@/components/ui/form"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Button } from "@/components/ui/button"
 
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
 import { formSchema } from "@/lib/validation"
 
-import { useForm } from "react-hook-form"
-
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Button } from "@/components/ui/button"
-
-/*
-const formSchema = z.object({
-    email: z.string().email({
-        message: "Введите адрес электронной почты",
-    }),
-    password: z.string().min(1, {
-        message: "Введите пароль",
-    }),
-})*/
 
 export default function Login() {
     const form = useForm({
@@ -156,12 +147,12 @@ export default function Login() {
                     <div className="flex flex-col items-center justify-center gap-4">
                         <Button variant="customGradient" size="customLg">Google</Button>
                         <Button variant="customGradient" size="customLg">Facebook</Button>
-                        <span className="text-sm text-muted-foreground">
+                        <span className="text-xs text-muted-foreground">
                             Создавая аккаунт, вы соглашаетесь с нашими  
-                            <Link className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500" href={"/"}> условиями использования
-                                <p className=" bottom-0 left-0 w-43 h-[1px] bg-gradient-to-r from-purple-500 to-blue-500"></p>
+                            <Link className="text-xs text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500" href={"/"}> условиями использования
+                                <p className=" bottom-0 left-0 w-21 h-[1px] bg-gradient-to-r from-purple-500 to-blue-500"></p>
                             </Link>
-                        </span>
+                        </div>
                     </div>
                 </div>
             </Card >
