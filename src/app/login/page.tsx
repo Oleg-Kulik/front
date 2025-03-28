@@ -145,14 +145,17 @@ export default function Login() {
                         <div className="w-full h-[1px]  bg-gray-300"></div>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-4">
-                        <Button variant="customGradient" size="customLg">Google</Button>
-                        <Button variant="customGradient" size="customLg">Facebook</Button>
-                        <span className="text-xs text-muted-foreground">
-                            Создавая аккаунт, вы соглашаетесь с нашими  
-                            <Link className="text-xs text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500" href={"/"}> условиями использования
-                                <p className=" bottom-0 left-0 w-21 h-[1px] bg-gradient-to-r from-purple-500 to-blue-500"></p>
+                        <Button variant="outline" size="customLg">
+                            <Image src="/LogosYandexRu.svg" alt="yandex logo" width={50} height={40} /></Button>
+                        <Button variant="outline" size="customLg">
+                            <Image src="/github-mark.svg" alt="github logo" width={25} height={25} />GitHub
+                        </Button>
+                        <div className="space-y-0 flex flex-col w-full">
+                            <p className="text-xs text-muted-foreground text-left">Создавая аккаунт, вы соглашаетесь с нашими</p>
+                            <Link className="text-xs text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500 text-left" href={"/"}> условиями использования
+                                <p className=" bottom-0 left-0 w-37 h-[1px] bg-gradient-to-r from-purple-500 to-blue-500"></p>
                             </Link>
-                        </span>
+                        </div>
                     </div>
                 </div>
             </Card >
