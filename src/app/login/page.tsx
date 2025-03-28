@@ -156,10 +156,10 @@ export default function Login() {
                     <div className="flex flex-col items-center justify-center gap-4">
                         <Button variant="customGradient" size="customLg">Google</Button>
                         <Button variant="customGradient" size="customLg">Facebook</Button>
-                        <span className="text-xs text-muted-foreground">
+                        <span className="text-sm text-muted-foreground">
                             Создавая аккаунт, вы соглашаетесь с нашими  
-                            <Link className="text-xs text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500" href={"/"}> условиями использования
-                                <p className=" bottom-0 left-0 w-21 h-[1px] bg-gradient-to-r from-purple-500 to-blue-500"></p>
+                            <Link className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500" href={"/"}> условиями использования
+                                <p className=" bottom-0 left-0 w-43 h-[1px] bg-gradient-to-r from-purple-500 to-blue-500"></p>
                             </Link>
                         </span>
                     </div>
