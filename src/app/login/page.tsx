@@ -153,7 +153,7 @@ export default function Login() {
                         <div className="space-y-0 flex flex-col w-full">
                             <p className="text-xs text-muted-foreground text-left">Создавая аккаунт, вы соглашаетесь с нашими</p>
                             <Link className="text-xs text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500 text-left" href={"/"}> условиями использования
-                                <p className=" bottom-0 left-0 w-37 h-[1px] bg-gradient-to-r from-purple-500 to-blue-500"></p>
+                                <p className=" bottom-0 left-0 w-36 h-[1px] bg-gradient-to-r from-purple-500 to-blue-500"></p>
                             </Link>
                         </div>
                     </div>
