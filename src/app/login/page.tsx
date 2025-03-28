@@ -152,7 +152,7 @@ export default function Login() {
                             <Link className="text-xs text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500" href={"/"}> условиями использования
                                 <p className=" bottom-0 left-0 w-21 h-[1px] bg-gradient-to-r from-purple-500 to-blue-500"></p>
                             </Link>
-                        </div>
+                        </span>
                     </div>
                 </div>
             </Card >
